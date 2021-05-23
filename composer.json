@@ -1,0 +1,23 @@
+{
+    "name": "pyaesoneaung/myanmar-phone-validation-rules",
+    "description": "Myanmar Phone Number Validation Rules For Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pyae Sone Aung",
+            "email": "pyaesoneaungrgn@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "cyberwings/myanmar-phone-number-php": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+          "PyaeSoneAung\\MyanmarPhoneValidationRules\\": "src/"
+        }
+    }
+}
