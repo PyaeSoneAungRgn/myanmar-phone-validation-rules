@@ -11,72 +11,54 @@ composer require pyaesoneaung/myanmar-phone-validation-rules
 ```php
 use PyaeSoneAung\MyanmarPhoneValidationRules\MyanmarPhone;
 
-public function rules()
-{
-    return [
-        'phone' => ['required', new MyanmarPhone()],
-    ];
-}
+$request->validate([
+    'phone' => ['required', new MyanmarPhone],
+]);
 ```
 
 ### MPT
 ```php
 use PyaeSoneAung\MyanmarPhoneValidationRules\Mpt;
 
-public function rules()
-{
-    return [
-        'phone' => ['required', new Mpt()],
-    ];
-}
+$request->validate([
+    'phone' => ['required', new Mpt],
+]);
 ```
 
 ### Ooredoo
 ```php
 use PyaeSoneAung\MyanmarPhoneValidationRules\Ooredoo;
 
-public function rules()
-{
-    return [
-        'phone' => ['required', new Ooredoo()],
-    ];
-}
+$request->validate([
+    'phone' => ['required', new Ooredoo],
+]);
 ```
 
 ### Telenor
 ```php
 use PyaeSoneAung\MyanmarPhoneValidationRules\Telenor;
 
-public function rules()
-{
-    return [
-        'phone' => ['required', new Telenor()],
-    ];
-}
+$request->validate([
+    'phone' => ['required', new Telenor],
+]);
 ```
 
 ### Mytel
 ```php
 use PyaeSoneAung\MyanmarPhoneValidationRules\Mytel;
 
-public function rules()
-{
-    return [
-        'phone' => ['required', new Mytel()],
-    ];
-}
+$request->validate([
+    'phone' => ['required', new Mytel],
+]);
 ```
 
 ### MEC
 ```php
 use PyaeSoneAung\MyanmarPhoneValidationRules\Mec;
 
-public function rules()
-{
-    return [
-        'phone' => ['required', new Mec()],
-    ];
-}
+$request->validate([
+    'phone' => ['required', new Mec],
+]);
 ```
 
 ## Credits
