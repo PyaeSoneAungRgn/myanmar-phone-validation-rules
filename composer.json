@@ -13,7 +13,7 @@
     "prefer-stable" : true,
     "require": {
         "php": ">=7.0.0",
-        "cyberwings/myanmar-phone-number-php": "dev-master"
+        "cyberwings/myanmar-phone-number-php": "^0.0.3"
     },
     "autoload": {
         "psr-4": {
