@@ -3,7 +3,7 @@
 namespace PyaeSoneAung\MyanmarPhoneValidationRules;
 
 use Illuminate\Contracts\Validation\Rule;
-use CyberWings\MyanmarPhoneNumber;
+use LaravelMyanmarTools\PhoneNumber\PhoneNumber;
 
 class Mpt implements Rule
 {
@@ -16,7 +16,7 @@ class Mpt implements Rule
      */
     public function passes($attribute, $value)
     {
-    	return (new MyanmarPhoneNumber())->is_telecom('mpt', $value);
+    	return (new PhoneNumber)->isMpt((string) $value);
     }
 
     /**

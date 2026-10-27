@@ -62,4 +62,5 @@ $request->validate([
 ```
 
 ## Credits
+[Laravel Myanmar Tools (phone-number)](https://github.com/laravel-myanmar-tools/phone-number)
 [Ko Htet Wai Yan Soe (myanmar-phone-number-php)](https://github.com/johnreginald/myanmar-phone-number-php)

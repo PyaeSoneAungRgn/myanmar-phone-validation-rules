@@ -3,7 +3,7 @@
 namespace PyaeSoneAung\MyanmarPhoneValidationRules;
 
 use Illuminate\Contracts\Validation\Rule;
-use CyberWings\MyanmarPhoneNumber;
+use LaravelMyanmarTools\PhoneNumber\PhoneNumber;
 
 class Ooredoo implements Rule
 {
@@ -16,7 +16,7 @@ class Ooredoo implements Rule
      */
     public function passes($attribute, $value)
     {
-    	return (new MyanmarPhoneNumber())->is_telecom('ooredoo', $value);
+    	return (new PhoneNumber)->isOoredoo((string) $value);
     }
 
     /**
